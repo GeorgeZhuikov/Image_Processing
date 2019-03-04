@@ -49,5 +49,19 @@ namespace SCA_API.Classes
             }
             return compressed.ToArray();
         }
+
+        public static byte[] LZ77(byte[] original)
+        {
+            List<byte> compressed = new List<byte>();
+
+            return compressed.ToArray();
+        }
+
+        public static byte[] HuffmanCode(byte[] original)
+        {
+            List<byte> compressed = new List<byte>();
+
+            return compressed.ToArray();
+        }
     }
 }

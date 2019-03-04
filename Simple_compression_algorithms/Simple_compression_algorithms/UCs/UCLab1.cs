@@ -38,6 +38,10 @@ namespace Simple_compression_algorithms.UCs
         {
             var rle = Lab1.RLE(_bytes);
             lblRLE.Text = Utils.GetCompressPercentage(_bytes, rle);
+            var lz77 = Lab1.LZ77(_bytes);
+            //lblLZ77.Text = Utils.GetCompressPercentage(_bytes, lz77);
+            var hc = Lab1.HuffmanCode(_bytes);
+            //lblHC.Text = Utils.GetCompressPercentage(_bytes, hc);
         }
     }
 }

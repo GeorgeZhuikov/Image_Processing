@@ -38,7 +38,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblLZ77 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.lblHsC = new System.Windows.Forms.Label();
+            this.lblHC = new System.Windows.Forms.Label();
             this.gpbFile.SuspendLayout();
             this.gpbCoefs.SuspendLayout();
             this.SuspendLayout();
@@ -104,7 +104,7 @@
             // gpbCoefs
             // 
             this.gpbCoefs.Controls.Add(this.label5);
-            this.gpbCoefs.Controls.Add(this.lblHsC);
+            this.gpbCoefs.Controls.Add(this.lblHC);
             this.gpbCoefs.Controls.Add(this.label1);
             this.gpbCoefs.Controls.Add(this.lblLZ77);
             this.gpbCoefs.Controls.Add(this.label3);
@@ -149,13 +149,13 @@
             // 
             // lblHsC
             // 
-            this.lblHsC.AutoSize = true;
-            this.lblHsC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblHsC.Location = new System.Drawing.Point(200, 120);
-            this.lblHsC.Name = "lblHsC";
-            this.lblHsC.Size = new System.Drawing.Size(19, 25);
-            this.lblHsC.TabIndex = 11;
-            this.lblHsC.Text = "-";
+            this.lblHC.AutoSize = true;
+            this.lblHC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblHC.Location = new System.Drawing.Point(200, 120);
+            this.lblHC.Name = "lblHsC";
+            this.lblHC.Size = new System.Drawing.Size(19, 25);
+            this.lblHC.TabIndex = 11;
+            this.lblHC.Text = "-";
             // 
             // UCLab1
             // 
@@ -183,7 +183,7 @@
         private System.Windows.Forms.GroupBox gpbFile;
         private System.Windows.Forms.GroupBox gpbCoefs;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label lblHsC;
+        private System.Windows.Forms.Label lblHC;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblLZ77;
     }
