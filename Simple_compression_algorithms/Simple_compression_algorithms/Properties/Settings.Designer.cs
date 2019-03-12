@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Simple_compression_algorithms.Properties
+namespace Image_Processing.Properties
 {
 
 

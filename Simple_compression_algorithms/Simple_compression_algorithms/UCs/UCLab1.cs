@@ -1,16 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-using SCA_API.Classes;
+using IP_API.Classes;
 
-namespace Simple_compression_algorithms.UCs
+namespace Image_Processing.UCs
 {
     public partial class UCLab1 : UserControl
     {
@@ -19,19 +12,14 @@ namespace Simple_compression_algorithms.UCs
         public UCLab1()
         {
             Dock = DockStyle.Fill;
-
             InitializeComponent();
+            ucOpenFile.FileOpened = FileOpened;
         }
 
-        private void lblFile_Click(object sender, EventArgs e)
+        private void FileOpened()
         {
-            if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            {
-                lblFile.Text = ofd.SafeFileName;
-                _bytes = File.ReadAllBytes(ofd.FileName);
-                ofd.FileName = ofd.SafeFileName;
-                ProceedResult();
-            }
+            _bytes = ucOpenFile.FileBytes;
+            ProceedResult();
         }
 
         private void ProceedResult()

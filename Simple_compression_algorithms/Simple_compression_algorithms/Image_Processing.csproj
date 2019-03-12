@@ -59,6 +59,18 @@
     <Compile Include="UCs\UCLab1.Designer.cs">
       <DependentUpon>UCLab1.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCs\UCLab2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCs\UCLab2.Designer.cs">
+      <DependentUpon>UCLab2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCs\UCTools\UCOpenFile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCs\UCTools\UCOpenFile.Designer.cs">
+      <DependentUpon>UCOpenFile.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FMain.resx">
       <DependentUpon>FMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -70,9 +82,16 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="UCs\UCLab1.resx">
       <DependentUpon>UCLab1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCs\UCLab2.resx">
+      <DependentUpon>UCLab2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCs\UCTools\UCOpenFile.resx">
+      <DependentUpon>UCOpenFile.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -83,14 +102,20 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\boxes_1.ppm" />
+    <None Include="Resources\house_1.ppm" />
+    <None Include="Resources\moreboxes_1.ppm" />
+    <None Include="Resources\sign_1.ppm" />
+    <None Include="Resources\synth_1.ppm" />
+    <None Include="Resources\tree_1.ppm" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SCA_API\SCA_API.csproj">
+    <ProjectReference Include="..\SCA_API\IP_API.csproj">
       <Project>{E094C16A-744F-487C-A30D-CC3DD6928ABD}</Project>
-      <Name>SCA_API</Name>
+      <Name>IP_API</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
