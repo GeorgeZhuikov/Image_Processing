@@ -16,10 +16,10 @@ namespace IP_API.Classes
                 e.Handled = true;
         }
 
-        public static void DigitAndMinusInputCheck(KeyPressEventArgs e)
+        public static void DoubleAndMinusInputCheck(KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) 
-                && (e.KeyChar != '-') && (e.KeyChar != '.'))
+                && !(e.KeyChar == '-' || e.KeyChar == ','))
                 e.Handled = true;
         }
 
@@ -31,5 +31,6 @@ namespace IP_API.Classes
                     array[i, j] = Convert.ToInt32(dgv.Rows[i].Cells[j].Value);
             return array;
         }
+        
     }
 }

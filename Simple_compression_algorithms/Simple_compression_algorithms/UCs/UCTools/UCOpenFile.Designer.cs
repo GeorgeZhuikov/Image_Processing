@@ -1,4 +1,4 @@
-﻿namespace Simple_compression_algorithms.UCs.UCTools
+﻿namespace Image_Processing.UCs.UCTools
 {
     partial class UCOpenFile
     {

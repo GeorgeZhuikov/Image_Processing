@@ -35,7 +35,7 @@
             this.lblHC = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblLZ77 = new System.Windows.Forms.Label();
-            this.ucOpenFile = new Simple_compression_algorithms.UCs.UCTools.UCOpenFile();
+            this.ucOpenFile = new Image_Processing.UCs.UCTools.UCOpenFile();
             this.gpbCoefs.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -146,6 +146,6 @@
         private System.Windows.Forms.Label lblHC;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblLZ77;
-        private Simple_compression_algorithms.UCs.UCTools.UCOpenFile ucOpenFile;
+        private Image_Processing.UCs.UCTools.UCOpenFile ucOpenFile;
     }
 }

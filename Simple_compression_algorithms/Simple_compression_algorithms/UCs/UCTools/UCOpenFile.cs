@@ -10,13 +10,14 @@ using System.Windows.Forms;
 using System.IO;
 using SCA_API.Classes;
 
-namespace Simple_compression_algorithms.UCs.UCTools
+namespace Image_Processing.UCs.UCTools
 {
     public partial class UCOpenFile : UserControl
     {
         private byte[] _bytes;
         private CustomImage _ci;
 
+        public string CiType { get { return _ci.Type; } }
         public byte[] FileBytes { get { return  _bytes;  } }
         public Bitmap Image { get { return _ci.Image; } }
         public Action FileOpened { get; set; }
@@ -33,19 +34,18 @@ namespace Simple_compression_algorithms.UCs.UCTools
             {
                 try
                 {
-                    lblFile.Text = ofd.SafeFileName;
                     _bytes = File.ReadAllBytes(ofd.FileName);
                     _ci = new CustomImage(_bytes);
                     ofd.FileName = ofd.SafeFileName;
-                } 
+                    lblFile.Text = ofd.SafeFileName;
+                }
                 catch
                 {
-                    MessageBox.Show(string.Format("Открыть файл {0} не удалось", 
-                        lblFile.Text),
+                    MessageBox.Show(string.Format("Открыть файл {0} не удалось",
+                        ofd.FileName),
                         "Ошибка",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error);
-                    lblFile.Text = "Выбрать";
                 }
                 if (_ci != null) FileOpened?.Invoke();
             }
