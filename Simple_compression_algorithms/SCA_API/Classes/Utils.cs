@@ -55,5 +55,13 @@ namespace IP_API.Classes
             }
 
         }
+
+        public static byte ProceedNegativeByte(byte byte1, byte byte2, byte div = 2)
+        {
+            double result = ((double)byte1 - byte2) / div;
+            if (result < 0)
+                result += byte.MaxValue;
+            return (byte)result;
+        }
     }
 }

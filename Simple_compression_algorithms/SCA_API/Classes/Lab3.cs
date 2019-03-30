@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IP_API.Classes;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -20,9 +21,9 @@ namespace SCA_API.Classes
         private static Color GetL(Color pixel1, Color pixel2)
         {
             return Color.FromArgb(
-                Math.Abs(pixel1.R - pixel2.R) / 2,
-                Math.Abs(pixel1.G - pixel2.G) / 2,
-                Math.Abs(pixel1.B - pixel2.B) / 2);
+                Utils.ProceedNegativeByte(pixel1.R, pixel2.R),
+                Utils.ProceedNegativeByte(pixel1.G, pixel2.G),
+                Utils.ProceedNegativeByte(pixel1.B, pixel2.B));
         }
 
         private static Color GetHR(Color pixel1, Color pixel2)
@@ -36,9 +37,9 @@ namespace SCA_API.Classes
         private static Color GetLR(Color pixel1, Color pixel2)
         {
             return Color.FromArgb(
-                Math.Abs(pixel1.R - pixel2.R),
-                Math.Abs(pixel1.G - pixel2.G),
-                Math.Abs(pixel1.B - pixel2.B));
+                Utils.ProceedNegativeByte(pixel1.R, pixel2.R, 1),
+                Utils.ProceedNegativeByte(pixel1.G, pixel2.G, 1),
+                Utils.ProceedNegativeByte(pixel1.B, pixel2.B, 1));
         }
 
         private static void EncodeHalf(ref Bitmap bmp, Bitmap image, bool direction = false)
