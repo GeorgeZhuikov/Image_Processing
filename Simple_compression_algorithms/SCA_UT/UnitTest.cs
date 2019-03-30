@@ -21,5 +21,15 @@ namespace IP_UT
             var bytes = File.ReadAllBytes(@"C:\Repos\Simple_compression_algorithms\Simple_compression_algorithms\Simple_compression_algorithms\Resources\house_1.ppm");
             var ci = new CustomImage(bytes);
         }
+
+        [TestMethod]
+        public void Lab3Test()
+        {
+            var bytes = File.ReadAllBytes(@"C:\Repos\Simple_compression_algorithms\Simple_compression_algorithms\Simple_compression_algorithms\Resources\house_1.ppm");
+            var ci = new CustomImage(bytes);
+            new CustomImage(Lab3.Encode(ci.Image)).Save(@"C:\Users\q1\Desktop\FreeSpace\Test\testLab3EncodeResult.ppm");
+            new CustomImage(Lab3.Decode(ci.Image)).Save(@"C:\Users\q1\Desktop\FreeSpace\Test\testLab3DecodeResult.ppm");
+
+        }
     }
 }

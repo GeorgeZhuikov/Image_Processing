@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SCA_API.Classes;
+using System;
+using System.IO;
 using System.Windows.Forms;
 
 namespace IP_API.Classes
@@ -18,7 +20,7 @@ namespace IP_API.Classes
 
         public static void DoubleAndMinusInputCheck(KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) 
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar)
                 && !(e.KeyChar == '-' || e.KeyChar == ','))
                 e.Handled = true;
         }
@@ -31,6 +33,27 @@ namespace IP_API.Classes
                     array[i, j] = Convert.ToInt32(dgv.Rows[i].Cells[j].Value);
             return array;
         }
-        
+
+        public static void SaveImage(SaveFileDialog sfd, CustomImage ci)
+        {
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                if (ci.Save(sfd.FileName))
+                    MessageBox.Show(
+                        "Файл сохранён.",
+                        "Сохранить",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Information);
+                else
+                    MessageBox.Show(
+                            string.Format("Не удалось сохранить файл:{0}{1}",
+                            Environment.NewLine, sfd.FileName),
+                            "Сохранить",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error);
+                sfd.FileName = Path.GetFileName(sfd.FileName);
+            }
+
+        }
     }
 }

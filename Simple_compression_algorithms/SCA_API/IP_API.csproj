@@ -46,6 +46,7 @@
     <Compile Include="Classes\CustomImage.cs" />
     <Compile Include="Classes\Lab1.cs" />
     <Compile Include="Classes\Lab2.cs" />
+    <Compile Include="Classes\Lab3.cs" />
     <Compile Include="Classes\SaveFormats.cs" />
     <Compile Include="Classes\Utils.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

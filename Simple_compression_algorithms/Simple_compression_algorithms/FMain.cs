@@ -7,7 +7,7 @@ namespace Image_Processing
         public FMain()
         {
             InitializeComponent();
-            tbc.SelectedTab = tbc.TabPages[1];
+            tbc.SelectedTab = tbc.TabPages[2];
         }
     }
 }

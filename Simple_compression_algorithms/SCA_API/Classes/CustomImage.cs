@@ -33,6 +33,15 @@ namespace SCA_API.Classes
             ProceedBitmap();
         }
 
+        public CustomImage(Image image)
+        {
+            _type = SaveFormats.GetDefaultType();
+            _image = image as Bitmap;
+            _width = _image.Width;
+            _height = _image.Height;
+            ProceedBitmap();
+        }
+
         private void ProceedBytes()
         {
             int index = -1;

@@ -36,23 +36,7 @@ namespace Image_Processing.UCs
 
         private void btnSaveResult_Click(object sender, EventArgs e)
         {
-            if (sfd.ShowDialog() == DialogResult.OK)
-            {
-                if (_ciResult.Save(sfd.FileName))
-                    MessageBox.Show(
-                        "Файл сохранён.",
-                        "Сохранить",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Information);
-                else
-                    MessageBox.Show(
-                            string.Format("Не удалось сохранить файл:{0}{1}",
-                            Environment.NewLine, sfd.FileName),
-                            "Сохранить",
-                            MessageBoxButtons.OK,
-                            MessageBoxIcon.Error);
-                sfd.FileName = Path.GetFileName(sfd.FileName);
-            }
+            Utils.SaveImage(sfd, _ciResult);
         }
 
         private void txbWidth_KeyPress(object sender, KeyPressEventArgs e)

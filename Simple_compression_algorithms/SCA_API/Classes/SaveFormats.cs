@@ -22,5 +22,10 @@ namespace SCA_API.Classes
                     citfSelected = citf;
             return citfSelected;
         }
+
+        public static string GetDefaultType()
+        {
+            return _ciTFs.First().Type;
+        }
     }
 }
