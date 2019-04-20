@@ -1,8 +1,6 @@
 ﻿using IP_API.Classes;
-using SCA_API.Classes;
 using System;
 using System.Drawing;
-using System.IO;
 using System.Windows.Forms;
 
 namespace Image_Processing.UCs

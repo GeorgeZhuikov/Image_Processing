@@ -122,7 +122,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SCA_API\IP_API.csproj">
+    <ProjectReference Include="..\IP_API\IP_API.csproj">
       <Project>{E094C16A-744F-487C-A30D-CC3DD6928ABD}</Project>
       <Name>IP_API</Name>
     </ProjectReference>

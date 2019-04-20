@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.IO;
 using IP_API.Classes;
-using SCA_API.Classes;
+using IP_API.Classes;
 
 namespace IP_UT
 {

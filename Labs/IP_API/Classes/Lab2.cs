@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 
-namespace SCA_API.Classes
+namespace IP_API.Classes
 {
     public static class Lab2
     {

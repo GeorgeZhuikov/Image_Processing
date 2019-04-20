@@ -1,4 +1,4 @@
-﻿namespace SCA_API.Classes
+﻿namespace IP_API.Classes
 {
     public class CITypeFormat
     {
