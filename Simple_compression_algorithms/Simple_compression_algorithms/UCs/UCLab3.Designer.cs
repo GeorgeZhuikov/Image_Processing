@@ -1,4 +1,4 @@
-﻿namespace Simple_compression_algorithms.UCs
+﻿namespace Image_Processing.UCs
 {
     partial class UCLab3
     {

@@ -34,7 +34,7 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.ucLab11 = new Image_Processing.UCs.UCLab1();
             this.ucLab21 = new Image_Processing.UCs.UCLab2();
-            this.ucLab31 = new Simple_compression_algorithms.UCs.UCLab3();
+            this.ucLab31 = new Image_Processing.UCs.UCLab3();
             this.tbc.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -135,7 +135,7 @@
         private System.Windows.Forms.TabPage tabPage2;
         private Image_Processing.UCs.UCLab2 ucLab21;
         private System.Windows.Forms.TabPage tabPage3;
-        private Simple_compression_algorithms.UCs.UCLab3 ucLab31;
+        private Image_Processing.UCs.UCLab3 ucLab31;
     }
 }
 

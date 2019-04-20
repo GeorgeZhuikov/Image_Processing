@@ -1,16 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using SCA_API.Classes;
 using IP_API.Classes;
 
-namespace Simple_compression_algorithms.UCs
+namespace Image_Processing.UCs
 {
     public partial class UCLab3 : UserControl
     {

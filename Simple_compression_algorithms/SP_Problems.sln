@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IP_API", "SCA_API\IP_API.cs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IP_UT", "SCA_UT\IP_UT.csproj", "{53C8E70E-3984-4E44-8F68-75474E447FC4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Labs", "Labs", "{152FC477-3EDF-405B-ACDD-8FF9F9CD933E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Search Engine", "Search Engine", "{7A6D7565-3073-4035-AE2F-6EE0E889A927}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D608AAAC-A457-46EC-9666-466310BF48EF} = {152FC477-3EDF-405B-ACDD-8FF9F9CD933E}
+		{E094C16A-744F-487C-A30D-CC3DD6928ABD} = {152FC477-3EDF-405B-ACDD-8FF9F9CD933E}
+		{53C8E70E-3984-4E44-8F68-75474E447FC4} = {152FC477-3EDF-405B-ACDD-8FF9F9CD933E}
 	EndGlobalSection
 EndGlobal
