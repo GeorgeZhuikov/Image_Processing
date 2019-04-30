@@ -10,18 +10,22 @@ namespace Image_Processing.UCs.UCTools
     {
         private byte[] _bytes;
         private CustomImage _ci;
+        private WaveData _wd;
 
         public string CiType { get { return _ci.Type; } }
         public byte[] FileBytes { get { return  _bytes;  } }
         public Bitmap Image { get { return _ci.Image; } }
         public Action FileOpened { get; set; }
+        public string Filter { set { ofd.Filter = value; } }
+        public string Caption { set { gpbFile.Text = value; } }
+        public WaveData WaveData { get { return _wd; } }
 
         public UCOpenFile()
         {
             Dock = DockStyle.Top;
             InitializeComponent();
         }
-
+        
         private void lblFile_Click(object sender, EventArgs e)
         {
             if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
@@ -29,7 +33,11 @@ namespace Image_Processing.UCs.UCTools
                 try
                 {
                     _bytes = File.ReadAllBytes(ofd.FileName);
-                    _ci = new CustomImage(_bytes);
+                    var ext = Path.GetExtension(ofd.FileName);
+                    if (ext == ".ppm" || ext == ".pgm")
+                        _ci = new CustomImage(_bytes);
+                    if (ext == ".wav")
+                        _wd = Lab4.GetWaveData(ofd.FileName);
                     ofd.FileName = ofd.SafeFileName;
                     lblFile.Text = ofd.SafeFileName;
                 }
@@ -41,7 +49,7 @@ namespace Image_Processing.UCs.UCTools
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error);
                 }
-                if (_ci != null) FileOpened?.Invoke();
+                if (_ci != null || _wd != null) FileOpened?.Invoke();
             }
         }
 

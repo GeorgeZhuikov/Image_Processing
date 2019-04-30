@@ -30,15 +30,18 @@
         {
             this.tbc = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.ucLab11 = new Image_Processing.UCs.UCLab1();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.ucLab21 = new Image_Processing.UCs.UCLab2();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.ucLab31 = new Image_Processing.UCs.UCLab3();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.ucLab41 = new Simple_compression_algorithms.UCs.UCLab4();
             this.tbc.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbc
@@ -46,6 +49,7 @@
             this.tbc.Controls.Add(this.tabPage1);
             this.tbc.Controls.Add(this.tabPage2);
             this.tbc.Controls.Add(this.tabPage3);
+            this.tbc.Controls.Add(this.tabPage4);
             this.tbc.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbc.Location = new System.Drawing.Point(0, 0);
             this.tbc.Name = "tbc";
@@ -64,6 +68,14 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Лабораторная 1";
             // 
+            // ucLab11
+            // 
+            this.ucLab11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucLab11.Location = new System.Drawing.Point(3, 3);
+            this.ucLab11.Name = "ucLab11";
+            this.ucLab11.Size = new System.Drawing.Size(664, 905);
+            this.ucLab11.TabIndex = 0;
+            // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.SystemColors.Control;
@@ -74,6 +86,14 @@
             this.tabPage2.Size = new System.Drawing.Size(670, 911);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Лабораторная 2";
+            // 
+            // ucLab21
+            // 
+            this.ucLab21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucLab21.Location = new System.Drawing.Point(3, 3);
+            this.ucLab21.Name = "ucLab21";
+            this.ucLab21.Size = new System.Drawing.Size(664, 905);
+            this.ucLab21.TabIndex = 0;
             // 
             // tabPage3
             // 
@@ -86,22 +106,6 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Лабораторная 3";
             // 
-            // ucLab11
-            // 
-            this.ucLab11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ucLab11.Location = new System.Drawing.Point(3, 3);
-            this.ucLab11.Name = "ucLab11";
-            this.ucLab11.Size = new System.Drawing.Size(664, 905);
-            this.ucLab11.TabIndex = 0;
-            // 
-            // ucLab21
-            // 
-            this.ucLab21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ucLab21.Location = new System.Drawing.Point(3, 3);
-            this.ucLab21.Name = "ucLab21";
-            this.ucLab21.Size = new System.Drawing.Size(664, 905);
-            this.ucLab21.TabIndex = 0;
-            // 
             // ucLab31
             // 
             this.ucLab31.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -109,6 +113,25 @@
             this.ucLab31.Name = "ucLab31";
             this.ucLab31.Size = new System.Drawing.Size(664, 905);
             this.ucLab31.TabIndex = 0;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPage4.Controls.Add(this.ucLab41);
+            this.tabPage4.Location = new System.Drawing.Point(4, 29);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(670, 911);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Лабораторная 4";
+            // 
+            // ucLab41
+            // 
+            this.ucLab41.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucLab41.Location = new System.Drawing.Point(3, 3);
+            this.ucLab41.Name = "ucLab41";
+            this.ucLab41.Size = new System.Drawing.Size(664, 905);
+            this.ucLab41.TabIndex = 0;
             // 
             // FMain
             // 
@@ -123,6 +146,7 @@
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -136,6 +160,8 @@
         private Image_Processing.UCs.UCLab2 ucLab21;
         private System.Windows.Forms.TabPage tabPage3;
         private Image_Processing.UCs.UCLab3 ucLab31;
+        private System.Windows.Forms.TabPage tabPage4;
+        private Simple_compression_algorithms.UCs.UCLab4 ucLab41;
     }
 }
 
