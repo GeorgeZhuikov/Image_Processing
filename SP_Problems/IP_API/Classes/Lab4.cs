@@ -10,9 +10,17 @@ namespace IP_API.Classes
         private static byte[] BeginFourierTransform(WaveData signal)
         {
             byte[] bytes = new byte[signal.Bytes.Length];
+            for (int index = 0; index < bytes.Length; index+= signal.BytesPerSample)
+            {
+                int sample = 0;
+                for (int i = 0; i < signal.BytesPerSample; i++)
+                    sample += bytes[index + i];
 
+            }
             return bytes;
         }
+
+        private static byte
 
         private static int GetRange(WaveData db, bool half)
         {
