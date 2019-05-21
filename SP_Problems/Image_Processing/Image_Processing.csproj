@@ -71,6 +71,12 @@
     <Compile Include="UCs\UCLab3.Designer.cs">
       <DependentUpon>UCLab3.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCs\UCLab4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCs\UCLab4.Designer.cs">
+      <DependentUpon>UCLab4.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCs\UCTools\UCOpenFile.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UCs\UCLab3.resx">
       <DependentUpon>UCLab3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCs\UCLab4.resx">
+      <DependentUpon>UCLab4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCs\UCTools\UCOpenFile.resx">
       <DependentUpon>UCOpenFile.cs</DependentUpon>
