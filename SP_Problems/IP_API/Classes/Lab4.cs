@@ -20,8 +20,6 @@ namespace IP_API.Classes
             return bytes;
         }
 
-        private static byte
-
         private static int GetRange(WaveData db, bool half)
         {
             int max = int.MinValue;

@@ -52,6 +52,7 @@
     <Compile Include="Classes\Lab2.cs" />
     <Compile Include="Classes\Lab3.cs" />
     <Compile Include="Classes\Lab4.cs" />
+    <Compile Include="Classes\Lab5.cs" />
     <Compile Include="Classes\SaveFormats.cs" />
     <Compile Include="Classes\Utils.cs" />
     <Compile Include="Classes\WaveData.cs" />

@@ -1,8 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.IO;
 using IP_API.Classes;
-using IP_API.Classes;
-using SCA_API.Classes;
 using System;
 
 namespace IP_UT
@@ -34,9 +32,9 @@ namespace IP_UT
         }
 
         [TestMethod]
-        public void Lab4Test()
+        public void Lab5Test()
         {
-            var a_law = Lab4.A_law(BitConverter.GetBytes(666));
+            var a_law = Lab5.A_law(BitConverter.GetBytes(666));
             Assert.AreEqual(a_law, (byte)241);
         }
     }
