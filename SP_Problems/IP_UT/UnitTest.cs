@@ -2,6 +2,8 @@
 using System.IO;
 using IP_API.Classes;
 using IP_API.Classes;
+using SCA_API.Classes;
+using System;
 
 namespace IP_UT
 {
@@ -29,7 +31,13 @@ namespace IP_UT
             var ci = new CustomImage(bytes);
             new CustomImage(Lab3.Encode(ci.Image)).Save(@"C:\Users\q1\Desktop\FreeSpace\Test\testLab3EncodeResult.ppm");
             new CustomImage(Lab3.Decode(ci.Image)).Save(@"C:\Users\q1\Desktop\FreeSpace\Test\testLab3DecodeResult.ppm");
+        }
 
+        [TestMethod]
+        public void Lab4Test()
+        {
+            var a_law = Lab4.A_law(BitConverter.GetBytes(666));
+            Assert.AreEqual(a_law, (byte)241);
         }
     }
 }
