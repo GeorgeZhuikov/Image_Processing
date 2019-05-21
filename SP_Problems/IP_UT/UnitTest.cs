@@ -36,6 +36,8 @@ namespace IP_UT
         {
             var a_law = Lab5.A_law(BitConverter.GetBytes(666));
             Assert.AreEqual(a_law, (byte)241);
+            var mu_law = Lab5.Mu_law(.5);
+            Assert.AreEqual(mu_law, .87570306864923486);
         }
     }
 }

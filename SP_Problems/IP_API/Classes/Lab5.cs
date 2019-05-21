@@ -48,5 +48,10 @@ namespace IP_API.Classes
             temp.CopyTo(result, 0);
             return result[0];
         }
+
+        public static double Mu_law(double x)
+        {
+            return Math.Sign(x) * (Math.Log(1 + 255 * Math.Abs(x), Math.E) / Math.Log(256, Math.E));
+        }
     }
 }
